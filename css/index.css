@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "EB Garamond", serif;
+  background-color: aliceblue;
+}
+
+.navbar {
+  background-color: rgb(85, 184, 250);
+  border: 2px solid darkblue;
+  border-radius: 0.5em;
+  margin: 0em;
+  padding: 0.2em;
+  position: fixed;  
+  width: 96%;
+  display: flex; 
+  justify-content: space-around; 
+}
+
+h1 {
+  color: darkblue;
+  margin-top: 1em;
+  text-align: center; 
+  text-shadow: 0.05em 0.03em #8c8c8d;
+  font-size: 2.8em;
+}
+
+h2 {
+  color: darkblue;
+  font-size: 2em; 
+}
+
+span {
+  color: blue;
+  font-size: larger;
+}
+
+.mycard {
+  display: flex;
+  padding: 2em;
+}
+
+#About {
+  background-color: rgb(230, 240, 250);
+  text-indent: 2em; 
+  margin-right: 3em;
+  margin-left: 3em;
+  padding: 1.5em; 
+  border-radius: 0.5em;
+}
+
+.myphoto {
+  margin-top: 3em;
+  width: 15em;
+  height: 18em;
+  border-radius: 0.5em;
+}
+
+#Education {
+  margin: 1em;
+  margin-left: 5em;
+  margin-right: 2em;
+  padding: 1.5em;
+  padding-left: 30em;
+  background-color: rgb(194, 248, 248);
+  border-radius: 0.5em;
+}
+
+#Experience {
+  margin: 1em;
+  margin-left: 5em;
+  margin-right: 2em;
+  padding: 2.5em;
+  background-color: rgb(136, 231, 250);
+  border-radius: 0.5em;
+}
+
+#Connect {
+  text-align: center;
+  margin: 1em;
+  padding: 1.5em;
+  margin-left: 5em;
+  margin-right: 2em;
+  background-color: rgb(160, 249, 224);
+  border-radius: 0.5em;
+}
+
+.icons:hover {
+  color: rgb(6, 224, 253);
+  font-size: 1.1em;
+}
+
+.fa-brands {
+  font-size: 1.5em;
+  margin-right: 0.5em;
+}
