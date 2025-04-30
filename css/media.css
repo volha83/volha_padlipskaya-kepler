@@ -1,0 +1,136 @@
+/* small, mobile, (481px-768px) */
+@media (min-width: 481px) {
+.navbar {
+    font-size: 1.2em;
+}
+
+h1 {
+    font-size: 1.3em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+.edu-name,
+.exp-date {
+    grid-template-columns: 6em 1fr;
+    padding-bottom: 1em;
+}
+
+#About {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.myphoto {
+    width: 10em;
+    height: 13em;
+    justify-content: center;
+}
+
+.link {
+    display: none;
+}
+
+.connect-icons {
+    gap: 5em;
+}
+}
+/* tablet/laptop, (769px-1024px) */
+@media (min-width: 769px) {
+.navbar {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 1.6em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
+.edu-name,
+.exp-date {
+    grid-template-columns: 8em 1fr;
+    padding-bottom: 1.2em;
+}
+
+#About {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.myphoto {
+    width: 12em;
+    height: 15em;
+    justify-content: center;
+}
+
+.link {
+    display: inline;
+}
+
+.connect-icons {
+    gap: 3em;
+    font-size: 1.1em;
+}
+}
+/* desctop, (>1025px) */
+@media (min-width: 1025px) {
+.navbar {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#About {
+    display: flex;
+    flex-direction: row;
+}
+
+.myphoto {
+    margin-top: 2em;
+    width: 12em;
+    height: 15em;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.3em;
+    text-shadow: 0.09em 0.06em rgb(179, 179, 180);
+}
+
+.edu-name,
+.exp-date {
+    grid-template-columns: 10em 1fr;
+    padding-bottom: 1.5em;
+}
+
+.link {
+    display: inline;
+}
+
+.connect-icons {
+    gap: 7em;
+    font-size: 1.2em;
+}
+
+}
