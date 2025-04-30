@@ -2,34 +2,52 @@
   padding: 0;
   margin: 0;
 }
+
 body {
   font-family: "EB Garamond", serif;
-  background-color: aliceblue;
+  background-color: rgb(245, 253, 253);
+  width: 90%;
+  align-items: center;
 }
 
-.navbar {
-  background-color: rgb(85, 184, 250);
+#Navbar {
+  background-color: rgb(62, 176, 252);
   border: 2px solid darkblue;
   border-radius: 0.5em;
   margin: 0em;
   padding: 0.2em;
-  position: fixed;  
+  position: fixed;
   width: 96%;
-  display: flex; 
-  justify-content: space-around; 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.8em;
+
+  :hover {
+    color: rgb(11, 11, 73);
+    transform: translateY(-3px);
+  }
 }
 
 h1 {
-  color: darkblue;
+  color: rgb(53, 143, 245);
   margin-top: 1em;
-  text-align: center; 
-  text-shadow: 0.05em 0.03em #8c8c8d;
-  font-size: 2.8em;
+  text-align: center;
+  text-shadow: 0.05em 0.03em #2e2e6b;
+  /* font-size: 2.3em; */
 }
 
 h2 {
   color: darkblue;
-  font-size: 2em; 
+  font-size: 1.8em;
+  text-align: center;
+}
+
+h3 {
+  color: rgb(36, 26, 100);
+  text-shadow: 0.09em 0.06em rgb(179, 179, 180);
 }
 
 span {
@@ -37,54 +55,98 @@ span {
   font-size: larger;
 }
 
-.mycard {
-  display: flex;
-  padding: 2em;
+p {
+  color: rgb(10, 10, 77);
+}
+
+#About,
+#Education,
+#Experience,
+#Skills,
+#Projects,
+#Connect {
+  margin: 1em 3em 1em 3em;
+  border-radius: 0.5em;
+}
+
+.aboutme,
+#Education,
+#Experience,
+#Skills,
+#Projects,
+#Connect {
+  padding: 1.5em;
 }
 
 #About {
-  background-color: rgb(230, 240, 250);
-  text-indent: 2em; 
-  margin-right: 3em;
-  margin-left: 3em;
-  padding: 1.5em; 
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+}
+
+.aboutme {
+  background-color: rgb(202, 225, 249);
   border-radius: 0.5em;
+  text-indent: 2em;
 }
 
 .myphoto {
   margin-top: 3em;
-  width: 15em;
-  height: 18em;
+  width: 12em;
+  height: 15em;
   border-radius: 0.5em;
+  box-shadow: 0.2em 0.15em #929093;
+}
+
+.myphoto:hover {
+  box-shadow: 0.2em 0.15em #717071;
+  transform: translateY(-3px);
 }
 
 #Education {
-  margin: 1em;
-  margin-left: 5em;
-  margin-right: 2em;
-  padding: 1.5em;
-  padding-left: 30em;
   background-color: rgb(194, 248, 248);
-  border-radius: 0.5em;
+}
+
+.edu-name {
+  display: grid;
+  grid-template-columns: 10em 1fr;
+  padding-bottom: 1.5em;
+  align-items: center;
 }
 
 #Experience {
-  margin: 1em;
-  margin-left: 5em;
-  margin-right: 2em;
-  padding: 2.5em;
-  background-color: rgb(136, 231, 250);
-  border-radius: 0.5em;
+  background-color: rgb(152, 234, 250);
+}
+
+.exp-container {
+  color: rgb(34, 30, 75);
+}
+
+.exp-date {
+  display: grid;
+  grid-template-columns: 10em 1fr;
+  padding-bottom: 1.5em;
+}
+
+.exp-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+#Skills {
+  background-color: rgb(234, 215, 243);
+  text-align: center;
+}
+
+#Projects {
+  background-color: rgb(186, 197, 235);
+  text-align: center;
 }
 
 #Connect {
   text-align: center;
-  margin: 1em;
-  padding: 1.5em;
-  margin-left: 5em;
-  margin-right: 2em;
   background-color: rgb(160, 249, 224);
-  border-radius: 0.5em;
 }
 
 .icons:hover {

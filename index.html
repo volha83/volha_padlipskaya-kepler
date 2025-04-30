@@ -14,27 +14,38 @@
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <script
       src="https://kit.fontawesome.com/d3bfb1bb57.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <ul>
-      <h2>
-        <div class="navbar">
-          <a href="#About" style="color: rgb(26, 6, 245)">About</a>
-          <a href="#Education" style="color: rgb(26, 6, 245)">Education</a>
-          <a href="#Experience" style="color: rgb(26, 6, 245)">Experience</a>
-          <a href="#Connect" style="color: rgb(26, 6, 245)">Connect</a>
-        </div>
-      </h2>
-    </ul>
+    <section id="Navbar">
+      <ul>
+        <h2>
+          <div class="navbar">
+            <a href="#About">About</a>
+            <a href="#Education">Education</a>
+            <a href="#Experience">Experience</a>
+            <a href="#Skills">Skills</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Connect">Connect</a>
+          </div>
+        </h2>
+      </ul>
+    </section>
+
     <br />
     <h1>Volha Padlipskaya</h1>
 
-    <div class="mycard">
-      <section id="About">
+    <section id="About">
+      <div class="aboutme">
         <h2>About me</h2>
         <br />
         <p>
@@ -61,54 +72,99 @@
           <br />Right now, all my efforts are focused on studying in Code The
           Dream. And I hope my plans and dreams will come true soon!
         </p>
-      </section>
+      </div>
+
       <img src="img/mypic.jpg" alt="My Photo" class="myphoto" />
-    </div>
+    </section>
 
     <section id="Education">
       <h2>Education</h2>
       <br />
-      <ol>
-        <li>
-          <strong>2000-2005</strong>
+      <div class="edu-name">
+        <h3>2000 - 2005</h3>
+        <p>
           Sukhoi State Technical University of Gomel /course of study:
           Enterprise Economics and Management
-        </li>
-        <li>
-          <strong>2010-2012</strong>
+        </p>
+      </div>
+
+      <div class="edu-name">
+        <h3>2010 - 2012</h3>
+        <p>
           Upgrading and Retraining Institute of the Sukhoi STU of Gomel /course
           of study: Information System Software
-        </li>
-        <li><strong>2022-2023</strong> CPCC College/ ESL class</li>
-        <li>
-          <strong>2023-2024</strong> independent study and participation in
-          intensive programming courses ITilogia, IT-Incubator
-        </li>
-        <li><strong>2024-now</strong> CTD Intro to Programming</li>
-      </ol>
+        </p>
+      </div>
+
+      <div class="edu-name">
+        <h3>2022 - 2023</h3>
+        <p>CPC College/ ESL class</p>
+      </div>
+
+      <div class="edu-name">
+        <h3>2023 - 2024</h3>
+        <p>
+          independent study and participation in intensive programming courses
+          ITilogia, IT-Incubator
+        </p>
+      </div>
+
+      <div class="edu-name">
+        <h3>2024 - now</h3>
+        <p>CTD Intro to Programming</p>
+      </div>
     </section>
 
     <section id="Experience">
       <h2>Experience</h2>
+      <br>
+      <div class="exp-container">
+        <div class="exp-date">
+          <h3>2005 - 2021</h3>
+          <div class="exp-name">
+            <h3>a software engineer at OJSC Belarusian Steel Works</h3>
+            <p>
+              maintenance of FI modul SAP ERP that focuses on financial
+              reporting and accounting management, writing instructions and
+              templates, training in entering and viewing information, uploading
+              reports on debtors and creditors
+            </p>
+          </div>
+        </div>
+
+        <div class="exp-date">
+          <h3>2012 - 2021</h3>
+          <div class="exp-name">
+            <h3>a software engineer at OJSC Belarusian Steel Works</h3>
+            <p>
+              working with the ABAP-4 programming language, testing of the
+              implemented module of the SAP ERP enterprise Payment System, user
+              training
+            </p>
+          </div>
+        </div>
+
+        <div class="exp-date">
+          <h3>2021 - now</h3>
+          <div class="exp-name">
+            <h3>looking for the job</h3>
+            <p>
+              independent learning Photoshop, Figma, UX/UI designe, JavaScript
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Skills">
+      <h2>Skills</h2>
       <br />
-      <ul>
-        <li>
-          <strong>2005-2021</strong> a software engineer at OJSC Belarusian
-          Steel Works
-        </li>
-        <li>
-          <strong>2010-2021</strong> Maintenance of FI modul SAP ERP that
-          focuses on financial reporting and accounting management, <br />
-          writing instructions and templates, training in entering and viewing
-          information, uploading reports on debtors and creditors
-        </li>
-        <li>working with the ABAP-4 programming language</li>
-        <li>
-          writing small programms to calculate or download information on Delphy
-          programming language
-        </li>
-        <li>independent learning Photoshop, Figma, UX/UI designe</li>
-      </ul>
+    </section>
+
+    <section id="Projects">
+      <h2>Projects</h2>
+      <br />
+      <ul></ul>
     </section>
 
     <section id="Connect">
