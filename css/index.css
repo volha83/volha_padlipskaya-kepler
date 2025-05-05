@@ -6,24 +6,21 @@
 body {
   font-family: "EB Garamond", serif;
   background-color: rgb(245, 253, 253);
-  width: 90%;
-  align-items: center;
+  width: 100%;
 }
 
 #Navbar {
   background-color: rgb(62, 176, 252);
   border: 2px solid darkblue;
-  border-radius: 0.5em;
   margin: 0em;
-  padding: 0.2em;
+  padding: 0.5em;
   position: fixed;
-  width: 96%;
+  width: 100%;
 }
 
 .navbar {
   display: flex;
   justify-content: space-around;
-  font-size: 0.8em;
 
   :hover {
     color: rgb(11, 11, 73);
@@ -31,23 +28,25 @@ body {
   }
 }
 
+.navbar a {
+  color: rgb(7, 3, 253);
+  text-decoration: none;
+}
+
 h1 {
   color: rgb(53, 143, 245);
   margin-top: 1em;
   text-align: center;
   text-shadow: 0.05em 0.03em #2e2e6b;
-  /* font-size: 2.3em; */
 }
 
 h2 {
   color: darkblue;
-  font-size: 1.8em;
   text-align: center;
 }
 
 h3 {
   color: rgb(36, 26, 100);
-  text-shadow: 0.09em 0.06em rgb(179, 179, 180);
 }
 
 span {
@@ -65,7 +64,7 @@ p {
 #Skills,
 #Projects,
 #Connect {
-  margin: 1em 3em 1em 3em;
+  margin: 1.5em 3em 1.5em 3em;
   border-radius: 0.5em;
 }
 
@@ -75,13 +74,13 @@ p {
 #Skills,
 #Projects,
 #Connect {
-  padding: 1.5em;
+  padding: 3em 3.5em;
+  box-shadow: 0.4em 0.4em 0.4em #b6b5b5;
 }
 
 #About {
-  display: flex;
-  flex-direction: row;
   gap: 1.5em;
+  align-items: center;
 }
 
 .aboutme {
@@ -91,26 +90,24 @@ p {
 }
 
 .myphoto {
-  margin-top: 3em;
-  width: 12em;
-  height: 15em;
   border-radius: 0.5em;
-  box-shadow: 0.2em 0.15em #929093;
+  box-shadow: 0.6em 0.5em 0.6em #8f8f8f;
+  width: 10em;
+  height: 13em;
 }
 
 .myphoto:hover {
-  box-shadow: 0.2em 0.15em #717071;
-  transform: translateY(-3px);
+  box-shadow: 0.6em 0.5em 0.6em #565656;
+  transform: translateY(-5px);
 }
 
 #Education {
   background-color: rgb(194, 248, 248);
 }
 
-.edu-name {
+.edu-name,
+.exp-date {
   display: grid;
-  grid-template-columns: 10em 1fr;
-  padding-bottom: 1.5em;
   align-items: center;
 }
 
@@ -120,12 +117,6 @@ p {
 
 .exp-container {
   color: rgb(34, 30, 75);
-}
-
-.exp-date {
-  display: grid;
-  grid-template-columns: 10em 1fr;
-  padding-bottom: 1.5em;
 }
 
 .exp-name {
@@ -140,8 +131,8 @@ p {
 }
 
 #Projects {
-  background-color: rgb(186, 197, 235);
   text-align: center;
+  background-color: rgb(186, 197, 235);
 }
 
 #Connect {
@@ -149,12 +140,37 @@ p {
   background-color: rgb(160, 249, 224);
 }
 
-.icons:hover {
-  color: rgb(6, 224, 253);
-  font-size: 1.1em;
+.connect-icons {
+  display: flex;
+  justify-content: center;
 }
 
-.fa-brands {
+.link {
+  color: rgb(11, 11, 98);
+  display: none;
+}
+
+.link:hover {
+  color: rgb(30, 138, 232);
+}
+
+.fa {
   font-size: 1.5em;
   margin-right: 0.5em;
+}
+
+.fa-github {
+  color: black;
+}
+
+.fa-github:hover {
+  transform: translateY(-3px);
+}
+
+.fa-linkedin:hover {
+  transform: translateY(-3px);
+}
+
+.fa-envelope:hover {
+  transform: translateY(-3px);
 }
