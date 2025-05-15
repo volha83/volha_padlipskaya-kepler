@@ -27,7 +27,7 @@
     ></script>
   </head>
   <body>
-    <div>
+
       <section id="Navbar">
         <nav class="navbar">
           <ul>
@@ -37,9 +37,17 @@
             <li><a href="#Skills">Skills</a></li>
             <li><a href="#Projects">Projects</a></li>
             <li><a href="#Connect">Connect</a></li>
+            <li><a href="#messages">Leave message</a></li>
           </ul>
-          
         </nav>
+
+        <div class="menu_burger">
+          <p class="menu">My menu</p>
+              <div class="burger"> 
+                <span></span> 
+              </div>
+        </div>
+
       </section>
 
       <br />
@@ -48,6 +56,7 @@
         <h1>Volha Padlipskaya</h1>
       </div>
 
+      <div class="container">
       <section id="About">
         <div class="aboutme">
           <h2>About me</h2>
@@ -206,9 +215,39 @@
 
           </div>
       </section>
+    
+    <section id="messagesForm">
+      <h2>Leave a message</h2>
+      <br>
+      <form name ="leave_message">
+        <div class="message_sections">
+            <label for="usersName" class="label">User name: </label>
+            <input type="text" name ="usersName" required class="input">
+        </div>
+  
+        <div class="message_sections">
+            <label for="usersEmail" class="label">User email: </label>
+            <input type="email" name ="usersEmail" required class="input">
+        </div>
+
+        <div class="message_sections">
+            <label for="messages" class="label">Message: </label>
+            <textarea name="usersMessage" id ="message" required class="input"></textarea>
+        </div>
+        <br>
+        <button type="submit" class="but_submit">Submit</button>
+      </form>
+    </section>
+        
+    <section id="messages">
+        <h2>Messages</h2>
+        <ul></ul>
+    </section> 
     </div>
     <footer>
     </footer>
+
     <script src="js/index.js"></script>
+
   </body>
 </html>
