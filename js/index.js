@@ -68,9 +68,9 @@ messageForm.addEventListener("submit", (event) => {
     editButton.type = "button";
     editButton.setAttribute('id', 'editB');
     editButton.addEventListener("click", (event) => {
-    const updatedMessage = prompt("edit");
+    const updatedMessage = prompt("Edit your message");
     let editedMessage = newMessage.querySelector("span");
-    editedMessage.textContent = `left a message: ${updatedMessage}`;
+    editedMessage.textContent = `left a message:    ${updatedMessage}`;
 });   
 
 newMessage.appendChild(removeButton);
@@ -80,4 +80,18 @@ messageSection.style.display = "block";
 messageForm.reset();
 })
 
+/* fetch API  */
+    fetch("https://api.github.com/users/volha83/repos")
+    .then(response => response.json())
+    .then((repositories) => {
+          const projectSection = document.getElementById("Projects");
+          const projectList = projectSection.querySelector("ul");
+          for (let i = 0; i < repositories.length; i++) {
+            const project = document.createElement("li");  
+            project.innerHTML = `<a href = "${repositories[i].html_url}" target="_blank"> ${repositories[i].name} </a>`
+            projectList.appendChild(project);
+            project.setAttribute('id', 'myProjects');
+          }
+    })
+  
 

@@ -25,18 +25,12 @@ body {
     font-size: 0.9em;
 }
 
-.navbar li :hover {
-    border-radius: 0.3em;
-    border: 1.6px solid darkblue;
-    padding: 0.1em 0.3em;
-}
-
 .menu_burger {
     position: fixed;
     background-color: rgb(62, 176, 252);
     border: 2px solid darkblue;
     height: 30px;
-    width: 105px;
+    width: 111px;
     border-radius: 0 0.3em 0 0;
 }
 
@@ -125,30 +119,55 @@ p {
     font-size: 0.8em;
     }
 
-.message_sections {
-  /* display: flex; */
-    text-align: center;
-    gap: 0.8em;
-    font-size: 1em;
+#myProjects {
+    font-size: 0.8em;
 }
 
 .but_submit {
     font-size: 1em;
     background-color: #a2a2d5;
-    border-radius: 0.3em;
+    border-radius: 0.4em;
     margin: 0.3em;
     padding: 0.2em 0.5em;
 }
 
+.label {
+    /* font-weight: bold; */
+    margin-left: 1em;
+    font-weight: 0.8em;
+}
+
 .input {
-    font-size: 0.7em;
+    font-size: 0.8em;
+    padding: 0.1em; 
+    width: 9em;
 }
 
 #removeB, #editB {
-    margin: 0.1em;
-    padding: 0.1em 0.2em;
-    font-weight: 0.4em; 
+    margin: 0.2em;
+    padding: 0.2em;
+    font-weight: 0.5em; 
 }
+
+.textArea {
+    font-size: 0.8em;
+    padding: 0.1em;
+    border-radius: 0.3em;
+    width: 9em;
+    height: 3em;
+    border: 1.8px solid;
+    margin-left: 2em;
+}
+
+.message_sections {
+    padding: 0.1em;
+    font-size: 1em;
+}
+
+#messages {
+    font-size: 0.7em;
+}
+
 }
 /* small, mobile, (481px-768px) */
 @media (min-width: 481px) {
@@ -173,18 +192,12 @@ p {
     font-size: 1em;
 }
 
-.navbar li :hover {
-    border-radius: 0.5em;
-    border: 1.8px solid darkblue;
-    padding: 0.1em 0.2em;
-}
-
 .menu_burger {
     position: fixed;
     background-color: rgb(62, 176, 252);
     border: 2px solid darkblue;
     height: 30px;
-    width: 164px;
+    width: 170px;
     border-radius: 0 0.5em 0 0;
 }
 
@@ -293,11 +306,9 @@ h3 {
     gap: 5em;
 }
 
-.message_sections {
-  /* display: flex; */
-    text-align: center;
-    gap: 0.8em;
-    font-size: 1.1em;
+#myProjects {
+    font-weight: bold;
+    font-size: 0.9em;
 }
 
 .but_submit {
@@ -308,8 +319,15 @@ h3 {
     padding: 0.2em 0.5em;
 }
 
+.label {
+    /* font-weight: bold; */
+    margin-left: 1.5em;
+    font-weight: 0.8em;
+}
+
 .input {
     font-size: 0.7em;
+    padding: 0.2em; 
 }
 
 #removeB, #editB {
@@ -317,6 +335,26 @@ h3 {
     padding: 0.2em;
     font-weight: 0.5em; 
 }
+
+.textArea {
+    font-size: 0.9em;
+    padding: 0.1em;
+    border-radius: 0.3em;
+    width: 12em;
+    height: 4em;
+    border: 2px solid;
+    margin-left: 2em;
+}
+
+.message_sections {
+    padding: 0.2em;
+    font-size: 1em;
+}
+
+#messages {
+    font-size: 0.8em;
+}
+
 }
 /* tablet/laptop, (769px-1024px) */
 @media (min-width: 769px) {
@@ -394,11 +432,9 @@ h3 {
     font-size: 1.1em;
 }
 
-.message_sections {
-  /* display: flex; */
-    text-align: center;
-    gap: 1em;
-    font-size: 1.2em;
+#myProjects {
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
 .but_submit {
@@ -411,10 +447,12 @@ h3 {
 
 .label {
     font-weight: bold;
+    margin-left: 1.5em;
 }
 
 .input {
     font-size: 0.9em;
+    padding: 0.2em; 
 }
 
 #removeB, #editB {
@@ -422,6 +460,25 @@ h3 {
     padding: 0.3em 0.4em;
     font-weight: 0.6em; 
 }
+
+.textArea {
+    font-size: 0.9em;
+    padding: 0.1em;
+    border-radius: 0.3em;
+    width: 15em;
+    height: 5em;
+    border: 2px solid;
+    margin-left: 2em;
+}
+
+.message_sections {
+    padding: 0.4em;
+    font-size: 1.2em;
+}
+#messages {
+    font-size: 0.9em;
+}
+
 }
 /* desctop, (>1025px) */
 @media (min-width: 1025px) {
@@ -504,11 +561,9 @@ h3 {
     font-size: 1.2em;
 }
 
-.message_sections {
-  /* display: flex; */
-    text-align: center;
-    gap: 1.5em;
-    font-size: 1.2em;
+#myProjects {
+    font-weight: bold;
+    font-size: 1.3em;
 }
 
 .but_submit {
@@ -521,10 +576,12 @@ h3 {
 
 .label {
     font-weight: bold;
+    margin-left: 2em;
 }
 
 .input {
-    font-size: 0.9em;
+    font-size: 1em;
+    padding: 0.1em; 
 }
 
 #removeB, #editB {
@@ -532,5 +589,26 @@ h3 {
     padding: 0.3em 0.4em;
     font-weight: 0.7em; 
 }
+
+.textArea {
+    font-weight: bold;
+    font-size: 1em;
+    padding: 0.1em;
+    border-radius: 0.3em;
+    width: 15em;
+    height: 3em;
+    border: 1.8px solid;
+    margin-left: 2em;
+}
+
+.message_sections {
+    padding: 0.5em;
+    font-size: 1.2em;
+}
+
+#messages {
+    font-size: 1em;
+}
+
 
 }
