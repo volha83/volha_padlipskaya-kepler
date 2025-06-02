@@ -7,7 +7,7 @@ body {
   font-family: "EB Garamond", serif;
   background-color: rgb(245, 253, 253);
 }
-
+/*open burger menu after click - (.navbar became navbar.open, .burger become burger.active) */
 .open {
   display: flex !important;
 }
@@ -23,12 +23,13 @@ body {
 .navbar {
   /* background-color: rgb(62, 176, 252); */
   border: 2px solid darkblue;
+  border-radius: 0.5em;
 }
 
 .burger {
   background-color: rgb(62, 176, 252);
 }
-
+/*list om menu in navbar*/
 .navbar ul {
   display: flex;
   color: rgb(7, 3, 253);
@@ -102,16 +103,16 @@ p {
   box-shadow: 0 0 0.8em 0.3em #b6b5b5;
   /* box-shadow: 0.4em 0.4em 0.4em #b6b5b5; */
 }
-
+/*section togather text and my photo*/
 #About {
   gap: 1.5em;
   align-items: center;
 }
-
+/*section only text About me*/
 .aboutme {
   background-color: rgb(202, 225, 249);
   border-radius: 0.5em;
-  text-indent: 2em;
+  text-indent: 2em;          /*indentation in the test first lene*/
 }
 
 .myphoto {
@@ -129,7 +130,7 @@ p {
 #Education {
   background-color: rgb(194, 248, 248);
 }
-
+/*.edu-name: greed of all education, column = year and description*/
 .edu-name,
 .exp-date {
   display: grid;
@@ -139,11 +140,11 @@ p {
 #Experience {
   background-color: rgb(152, 234, 250);
 }
-
+/*all experiences, years and descriptions togather*/
 .exp-container {
   color: rgb(34, 30, 75);
 }
-
+/*greed of all experiences, column = year and description*/
 .exp-name {
   display: flex;
   flex-direction: column;
@@ -156,7 +157,7 @@ p {
   text-align: center;
   padding: 2em;
 }
-
+/*greed of all skills*/
 .allSkills {
   list-style: none;
   justify-content: space-around;
@@ -164,7 +165,7 @@ p {
   grid-template-columns: auto auto auto;
   flex-direction: column-reverse;
 }
-
+/*each of the skill*/
 .allSkills li {
   /* background-color: #CDB4DB; */
   background-color: #ebdcf4;
@@ -176,19 +177,22 @@ p {
 }
 
 #Projects {
-  text-align: center;
+  /* text-align: center; */
   background-color: rgb(186, 197, 235);
 }
 
 #myProjects {
-  list-style: none;
-  color: darkblue;
+  /* list-style: none; */
+  /* color: darkblue; */
   display: flex;
   flex-direction: column-reverse;
 }
 
 #myProjects a {
-  text-decoration: none;
+  /* text-decoration: none; */
+  color: darkblue;
+  text-align: center;
+  margin-bottom: 1.5em;   /*indentation bottom from the next name of project*/
 }
 
 #myProjects a:hover {
@@ -200,12 +204,12 @@ p {
   text-align: center;
   background-color: rgb(160, 249, 224);
 }
-
+/*group of all img and links, section connect*/
 .connect-icons {
   display: flex;
   justify-content: center;
 }
-
+/*links for all, section connect, textlinks */
 .link {
   color: rgb(11, 11, 98);
   font-weight: bold;
@@ -215,7 +219,7 @@ p {
 .link:hover {
   color: rgb(30, 138, 232);
 }
-
+/*all img icons*/
 .fa {
   font-size: 1.5em;
   margin-right: 0.5em;
@@ -224,19 +228,19 @@ p {
 .fa-github {
   color: black;
 }
-
+/*icon github*/
 .fa-github:hover {
   transform: translateY(-3px);
 }
-
+/*icon linkedin*/
 .fa-linkedin:hover {
   transform: translateY(-3px);
 }
-
+/*icon envelop*/
 .fa-envelope:hover {
   transform: translateY(-3px);
 }
-
+/*forms for input and for output messages*/
 #messagesForm, #messages {
   text-align: center;
   background-color: rgb(234, 215, 243);
@@ -244,7 +248,6 @@ p {
 
 .but_submit {
   font-family:Georgia, 'Times New Roman', Times, serif;
-  
 }
 
 .but_submit:hover {
@@ -267,19 +270,19 @@ p {
     background-color: rgb(253, 144, 226);
     transform: translateY(-1px);
 }
-
+/*new message section , link without underscores*/
 #newMessage {
   list-style: none;
 }
-
+/*text of entered messages*/
 #newMessage span {
   color: rgb(29, 29, 48);
 }
-
+/*list of messages, name link, click on which opens the mail*/
 #newMessage a {
   font-weight: bold;
 }
-
+/* section Leave messages*/
 .input {
   border-radius: 0.3em;
   margin-left: 1em;

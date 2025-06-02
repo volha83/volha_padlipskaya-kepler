@@ -119,8 +119,16 @@ p {
     font-size: 0.8em;
     }
 
-#myProjects {
+/*section Project - link name of Projects*/
+#myProjects a {
+    font-weight: bold;
     font-size: 0.8em;
+}
+
+/*section Project - description and datecreated*/
+#descrProject,
+#dateProject  {
+    font-size: 0.8em; 
 }
 
 .but_submit {
@@ -259,15 +267,19 @@ p {
 }
 
 h1 {
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 h2 {
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 h3 {
     font-size: 1em;
+}
+
+p {
+    font-size: 1.1em;
 }
 
 .edu-name,
@@ -306,9 +318,16 @@ h3 {
     gap: 5em;
 }
 
-#myProjects {
+/*section Project - link name of Projects*/
+#myProjects a {
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 1em;
+}
+
+/*section Project - description and datecreated*/
+#descrProject,
+#dateProject  {
+    font-size: 0.9em; 
 }
 
 .but_submit {
@@ -384,17 +403,20 @@ h3 {
 }
 
 h1 {
-    font-size: 1.6em;
+    font-size: 1.8em;
 }
 
 h2 {
-    font-size: 1.4em;
+    font-size: 1.7em;
 }
 
 h3 {
     font-size: 1.1em;
 }
 
+p {
+    font-size: 1.2em;
+}
 .edu-name,
 .exp-date {
     grid-template-columns: 8em 1fr;
@@ -432,9 +454,16 @@ h3 {
     font-size: 1.1em;
 }
 
-#myProjects {
+/*section Project - link name of Projects*/
+#myProjects a {
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.3em;
+}
+
+/*section Project - description and datecreated*/
+#descrProject,
+#dateProject  {
+    font-size: 1em; 
 }
 
 .but_submit {
@@ -535,6 +564,10 @@ h3 {
     text-shadow: 0.09em 0.06em rgb(179, 179, 180);
 }
 
+p {
+    font-size: 1.3em;
+}
+
 .edu-name,
 .exp-date {
     grid-template-columns: 10em 1fr;
@@ -561,9 +594,15 @@ h3 {
     font-size: 1.2em;
 }
 
-#myProjects {
+#myProjects a {
     font-weight: bold;
     font-size: 1.3em;
+}
+
+/*section Project - description and datecreated*/
+#descrProject,
+#dateProject  {
+    font-size: 1.1em; 
 }
 
 .but_submit {
@@ -605,9 +644,9 @@ h3 {
     padding: 0.5em;
     font-size: 1.2em;
 }
-
+/* messages - section for entered messages */
 #messages {
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 
