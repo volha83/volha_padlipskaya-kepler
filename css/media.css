@@ -1,44 +1,56 @@
 /* for screens up to 480px */
 @media(max-width: 480px) {
-body {
+/* body {
     background-color: rgb(205, 238, 249);
-}
+} */
 
 .navbar {
     display: none;
     flex-direction: column;
     position: fixed;
     /* padding: 1px 10px; */
-    padding: 0.5em 0.65em;
+    padding: 0.7em 1em;
     top: 2.1em;
     border-radius: 0  0 0.5em 0;
     background-color: rgba(62, 176, 252, 0.623);
 }
 
+.dark-theme .navbar {
+    background-color: #0e3568;
+}
+
 .navbar ul {
     display: flex;
     flex-direction: column;
-    row-gap: 16px; 
+    /* row-gap: 16px;  */
+    row-gap: 1.5em;
 }
 
 .navbar li {
-    font-size: 0.9em;
+    font-size: 1.1em;
 }
 
 .menu_burger {
     position: fixed;
     background-color: rgb(62, 176, 252);
     border: 2px solid darkblue;
-    height: 30px;
-    width: 111px;
+    height: 2.5em;
+    width: 9em;
     border-radius: 0 0.3em 0 0;
+    /* border-radius: 0.3em; */
+}
+
+.dark-theme .menu_burger {
+    background: #0e3568;
+    border: 2px solid rgb(243, 243, 252);
 }
 
 .menu {
     color: darkblue;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.2em;
     padding: 0.1em;
+    margin-left: 0.6em;
 }
 
 .burger {
@@ -47,27 +59,55 @@ body {
     position: fixed;
     align-items: center;
     justify-content: center;
-    height: 12px;
-    width: 27px;
+    height: 1.3em;
+    width: 2.7em;
     top: 0.5em;
     bottom: 0;
-    left: 4.5em;
+    left: 6em;
     right: 0;
+    z-index: 50;
+    overflow-y: auto;
+    /* padding: 0.1em; */
 }
 
 .burger span {
-    height: 2px;
+    /*2.5px - middle strip burger(thicknrss)*/  
+    height: 2.5px;
     width: 50%;
     transform: scale(1);
     background-color: darkblue;
 }
 
+.dark-theme .burger span {
+    height: 2.5px;
+    width: 50%;
+    transform: scale(1);
+    background: white;
+}
+
 .burger::after, .burger::before {
     content: '';
     position: absolute;
-    height: 2px;
+    /*2.5px - up/down strip burger(thicknrss)*/  
+    height: 2.5px;
     width: 50%;
     background-color: darkblue;
+}
+
+.dark-theme .burger::after {
+    content: '';
+    position: absolute;
+    height: 2.5px;
+    width: 50%;
+    background: white;
+}
+
+.dark-theme .burger::before {
+    content: '';
+    position: absolute;
+    height: 2.5px;
+    width: 50%;
+    background: white;
 }
 
 .burger::after{bottom: 0;}
@@ -109,27 +149,40 @@ p {
 }
 
 .allSkills li {
-    box-shadow: 0.4em 0.3em 0.4em #565656;
-    font-size: 0.8em;
+    box-shadow: 0.5em 0.5em 0.5em #565656;
+    font-size: 1.1em;
     padding: 0.4em;
     margin: 0.3em;
 }
+
+.dark-theme .allSkills li {
+    box-shadow: 0.3em 0.3em 0.7em rgb(130, 166, 250);
+}
+
+.link {
+    display: none;
+}
+
 .connect-icons {
     gap: 2em;
     font-size: 0.8em;
     }
 
 /*section Project - link name of Projects*/
-#myProjects a {
+#Projects a {
     font-weight: bold;
-    font-size: 0.8em;
+    font-size: 0.9em;
+}
+
+#Projects p {
+    font-size: 0.9em; 
 }
 
 /*section Project - description and datecreated*/
-#descrProject,
+/* #descrProject,
 #dateProject  {
     font-size: 0.8em; 
-}
+} */
 
 .but_submit {
     font-size: 1em;
@@ -184,8 +237,8 @@ p {
     flex-direction: column;
     position: fixed;
     justify-content: space-between;
-    padding: 1em 2.2em;
-    top: 2.1em;
+    padding: 0.7em 1.9em;
+    top: 2.3em;
     border-radius: 0  0 0.5em 0;
     background-color: rgba(62, 176, 252, 0.623);
 }
@@ -193,27 +246,33 @@ p {
 .navbar ul {
     display: flex;
     flex-direction: column;
-    row-gap: 20px; 
+    row-gap: 1.7em; 
 }
 
 .navbar li {
-    font-size: 1em;
+    font-size: 1.3em;
 }
 
 .menu_burger {
     position: fixed;
     background-color: rgb(62, 176, 252);
     border: 2px solid darkblue;
-    height: 30px;
-    width: 170px;
+    height: 2.5em;
+    width: 12em;
     border-radius: 0 0.5em 0 0;
+}
+
+.dark-theme .menu_burger {
+    background: #0e3568;
+    border: 2px solid rgb(243, 243, 252);
 }
 
 .menu {
     color: darkblue;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.3em;
     padding: 0.1em;
+    margin-left: 1.3em;
 }
 
 .burger {
@@ -222,31 +281,54 @@ p {
     position: fixed;
     align-items: center;
     justify-content: center;
-    height: 14px;
-    width: 40px;
-    top: 0.5em;
+    height: 1.2em;
+    width: 2.7em;
+    top: 0.6em;
     bottom: 0;
-    left: 6em;
+    left: 9em;
     right: 0;
     z-index: 50;
     overflow-y: auto;
-    padding: 0.1em;
+    /* padding: 0.1em; */
 }
 
-
 .burger span {
-    height: 2px;
+/*3px - middle strip burger(thicknrss)*/  
+    height: 3px;
     width: 50%;
     transform: scale(1);
     background-color: darkblue;
 }
 
+.dark-theme .burger span {
+    height: 3px;
+    width: 50%;
+    transform: scale(1);
+    background: white;
+}
 .burger::after, .burger::before {
     content: '';
     position: absolute;
-    height: 2px;
+    /*3px - up/down strip burger(thicknrss)*/  
+    height: 3px;
     width: 50%;
     background-color: darkblue;
+}
+
+.dark-theme .burger::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 50%;
+    background: white;
+}
+
+.dark-theme .burger::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 50%;
+    background: white;
 }
 
 .burger::after{bottom: 0;}
@@ -310,6 +392,10 @@ p {
     margin: 0.2em;
 }
 
+.dark-theme .allSkills li {
+    box-shadow: 0.2em 0.3em 0.6em rgb(130, 166, 250);
+}
+
 .link {
     display: none;
 }
@@ -319,16 +405,20 @@ p {
 }
 
 /*section Project - link name of Projects*/
-#myProjects a {
+#Projects a {
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.1em;
+}
+
+#Projects p {
+    font-size: 1em; 
 }
 
 /*section Project - description and datecreated*/
-#descrProject,
+/* #descrProject,
 #dateProject  {
     font-size: 0.9em; 
-}
+} */
 
 .but_submit {
     font-size: 1.1em;
@@ -379,13 +469,16 @@ p {
 @media (min-width: 769px) {
 .navbar {
     display: flex;
-    margin: 0em;
+    /* margin: 0em; */
+    margin-left: 2.5%;
     padding: 0.5em;
     position: fixed;
-    width: 100%;
+    /* width: 100%; */
+    width: 95%;
     height: 5%;
     top: 0;
     background-color: rgb(62, 176, 252);
+    border-radius: 0.5em;
 }
 
 .navbar ul {
@@ -445,6 +538,10 @@ p {
     margin: 0.3em;
 }
 
+.dark-theme .allSkills li {
+    box-shadow: 0.3em 0.3em 0.7em rgb(130, 166, 250);
+}
+
 .link {
     display: inline;
 }
@@ -455,16 +552,20 @@ p {
 }
 
 /*section Project - link name of Projects*/
-#myProjects a {
+#Projects a {
     font-weight: bold;
     font-size: 1.3em;
 }
 
+#Projects p {
+    font-size: 1.1em; 
+}
+
 /*section Project - description and datecreated*/
-#descrProject,
+/* #descrProject,
 #dateProject  {
     font-size: 1em; 
-}
+} */
 
 .but_submit {
     font-size: 1.4em;
@@ -507,8 +608,8 @@ p {
 #messages {
     font-size: 0.9em;
 }
-
 }
+
 /* desctop, (>1025px) */
 @media (min-width: 1025px) {
 
@@ -517,18 +618,22 @@ p {
     margin-left: 10%;
 }
 .navbar {
-    margin: 0em;
+    /* margin: 0em; */
+    margin-left: 5%;
     padding: 0.5em;
     position: fixed;
-    width: 100%;
+
+    width: 90%;
     height: 5%;
     background-color: rgb(62, 176, 252);
+    border-radius: 0.5em;
 }
 
 .navbar ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 }
 
 .navbar li {
@@ -561,7 +666,6 @@ h2 {
 
 h3 {
     font-size: 1.3em;
-    text-shadow: 0.09em 0.06em rgb(179, 179, 180);
 }
 
 p {
@@ -585,6 +689,10 @@ p {
     margin: 0.3em;
 }
 
+.dark-theme .allSkills li {
+    box-shadow: 0.3em 0.3em 0.7em rgb(130, 166, 250);
+}
+
 .link {
     display: inline;
 }
@@ -594,16 +702,20 @@ p {
     font-size: 1.2em;
 }
 
-#myProjects a {
+#Projects a {
     font-weight: bold;
     font-size: 1.3em;
 }
 
-/*section Project - description and datecreated*/
-#descrProject,
-#dateProject  {
+#Projects p {
     font-size: 1.1em; 
 }
+
+/*section Project - description and datecreated*/
+/* #descrProject,
+#dateProject  {
+    font-size: 1.1em; 
+} */
 
 .but_submit {
     font-size: 1.5em;
