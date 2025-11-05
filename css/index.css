@@ -5,7 +5,8 @@
 
 body {
   font-family: "EB Garamond", serif;
-  background-color: rgb(245, 253, 253);
+  /* background-color: rgb(245, 253, 253); */
+  background-color: rgb(205, 238, 249);
 }
 /*open burger menu after click - (.navbar became navbar.open, .burger become burger.active) */
 .open {
@@ -19,17 +20,35 @@ body {
   padding: 0.5em;
   margin-top: 0;
 }
-  
+
+.dark-theme .name {
+  background-color: rgb(247, 250, 252);
+}
+
+.dark-theme h1 {
+  color: rgb(2, 119, 252);
+}
+
+/* #Navbar {
+  justify-content: center;
+  align-items: center;
+} */
+
 .navbar {
-  /* background-color: rgb(62, 176, 252); */
+  background-color: rgb(62, 176, 252);
   border: 2px solid darkblue;
-  border-radius: 0.5em;
+  /* border-radius: 0.5em; */
 }
 
 .burger {
   background-color: rgb(62, 176, 252);
 }
-/*list om menu in navbar*/
+
+.dark-theme .burger {
+  background-color: #0e3568;
+}
+
+/*list of menu in navbar*/
 .navbar ul {
   display: flex;
   color: rgb(7, 3, 253);
@@ -47,12 +66,125 @@ body {
 }
 
 .navbar a:hover {
-    color: rgb(6, 6, 63);
-    border-radius: 0.5em;
+  color: rgb(6, 6, 63);
+  border-radius: 0.5em;
+  border-color: darkblue;
+  border: 1.6px solid transparent darkblue;
+  box-shadow: 0.1em 0.2em 0.2em 0.2em #0e3568;
+}
+
+/*dark mode button*/
+.theme-toggle-item button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  /* font-size: 18px; */
+  font-size: 0.8em;
+  padding: 5px;
+  /* font-family: 'Montserrat', sans-serif; */
+  align-items: center;
+  gap: 8px;
+}
+
+.theme-toggle-item button:hover {
+  color: gold;
+  /* border-radius: 0.5em;
     border-color: darkblue;
     border: 1.6px solid transparent darkblue;
-    box-shadow: 0.1em 0.2em 0.2em 0.2em #0e3568;
+    box-shadow: 0.1em 0.2em 0.2em 0.2em #0e3568; */
 }
+
+.dark-theme .bodyAll {
+  background: rgb(50 69 130 / 78%);
+}
+
+.dark-theme .navbar {
+  background: #0e3568;
+  border: 2px solid rgb(243, 243, 252);
+}
+
+.dark-theme .navbar a {
+  color: azure;
+}
+
+.dark-theme .navbar a:hover {
+  /* color: rgb(6, 6, 63); */
+  /* border-radius: 0.5em; */
+  border: 1.6px solid transparent rgb(241, 241, 250);
+  box-shadow: 0.1em 0.2em 0.2em 0.2em #c3c8e0;
+}
+
+.dark-theme .aboutme {
+  background: #0e3568;
+  box-shadow: 0 0 0.8em 0.3em #c3c8e0;
+}
+
+/* .dark-theme .myPhoto {
+    box-shadow: 0.6em 0.5em 0.6em #c3c8e0;
+}
+
+.dark-theme .myPhoto:hover {
+    box-shadow: 0.6em 0.5em 0.6em #dedfe0;
+} */
+
+.dark-theme #Education {
+  background: #0e3568;
+  box-shadow: 0 0 0.8em 0.3em #c3c8e0;
+}
+
+.dark-theme #Experience {
+  background: #0e3568;
+  box-shadow: 0 0 0.8em 0.3em #c3c8e0;
+}
+
+.dark-theme #Skills {
+  background: #0e3568;
+  box-shadow: 0 0 0.8em 0.3em #c3c8e0;
+}
+
+.dark-theme #Projects {
+  background: #0e3568;
+  box-shadow: 0 0 0.8em 0.3em #c3c8e0;
+}
+
+.dark-theme #Connect {
+  background: #0e3568;
+  box-shadow: 0 0 0.8em 0.3em #c3c8e0;
+}
+
+.dark-theme #messagesForm,
+#messages {
+  background: #0e3568;
+  box-shadow: 0 0 0.8em 0.3em #c3c8e0;
+}
+
+.dark-theme p {
+  color: #ebdcf4;
+}
+
+.dark-theme h2 {
+  color: whitesmoke;
+}
+
+.dark-theme h3 {
+  color: rgb(2, 194, 252);
+  text-shadow: 0.08em 0.02em rgb(247, 247, 250);
+}
+
+.dark-theme span {
+  color: rgb(0, 195, 255);
+}
+
+/* .darkButton {
+  position: fixed;
+  background-color:aqua;
+  border: 2.2px solid transparent darkblue;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  margin-left: 95%;
+  margin-top: 4%;
+} */
 
 h1 {
   color: rgb(53, 143, 245);
@@ -68,6 +200,7 @@ h2 {
 
 h3 {
   color: rgb(36, 26, 100);
+  text-shadow: 0.09em 0.06em rgb(179, 179, 180);
 }
 
 span {
@@ -84,9 +217,9 @@ p {
 #Experience,
 #Skills,
 #Projects,
-#Connect, 
-#messagesForm, 
-#messages{
+#Connect,
+#messagesForm,
+#messages {
   margin: 1.5em 3em 1.5em 3em;
   border-radius: 0.5em;
 }
@@ -112,7 +245,7 @@ p {
 .aboutme {
   background-color: rgb(202, 225, 249);
   border-radius: 0.5em;
-  text-indent: 2em;          /*indentation in the test first lene*/
+  text-indent: 2em; /*indentation in the test first lene*/
 }
 
 .myphoto {
@@ -153,10 +286,11 @@ p {
 }
 
 #Skills {
-  background-color: #FFC8DD;
+  background-color: #ffc8dd;
   text-align: center;
   padding: 2em;
 }
+
 /*greed of all skills*/
 .allSkills {
   list-style: none;
@@ -176,26 +310,31 @@ p {
   justify-content: center;
 }
 
+.dark-theme .allSkills li {
+  /* background-color: #ebdcf4; */
+  border: 2px solid whitesmoke;
+  background-color: rgb(160, 194, 238);
+}
+
 #Projects {
   /* text-align: center; */
   background-color: rgb(186, 197, 235);
 }
 
-#myProjects {
-  /* list-style: none; */
-  /* color: darkblue; */
+#Projects a {
   display: flex;
-  flex-direction: column-reverse;
-}
-
-#myProjects a {
-  /* text-decoration: none; */
-  color: darkblue;
+  flex-direction: column;
   text-align: center;
-  margin-bottom: 1.5em;   /*indentation bottom from the next name of project*/
+  border-radius: 0.5em;
+  background-color: rgb(150, 168, 231);
+  text-decoration: none;
+  color: blue;
+  /* font-weight: bold; */
+  margin-bottom: 1.5em; /*indentation bottom from the next name of project */
 }
 
-#myProjects a:hover {
+#Projects a:hover {
+  /* color: rgb(30, 138, 232); */
   color: rgb(30, 138, 232);
   transform: translateY(-3px);
 }
@@ -216,6 +355,10 @@ p {
   /* text-decoration: none; */
 }
 
+.dark-theme .link {
+  color: rgb(207, 207, 241);
+}
+
 .link:hover {
   color: rgb(30, 138, 232);
 }
@@ -228,26 +371,50 @@ p {
 .fa-github {
   color: black;
 }
+
+.dark-theme .fa-github {
+  color: azure;
+}
+.dark-theme .fa-linkedin {
+  color: azure;
+}
+.dark-theme .fa-envelope {
+  color: azure;
+}
+
 /*icon github*/
 .fa-github:hover {
   transform: translateY(-3px);
+  color: rgb(51, 164, 250);
 }
 /*icon linkedin*/
 .fa-linkedin:hover {
   transform: translateY(-3px);
+  color: rgb(51, 164, 250);
 }
 /*icon envelop*/
 .fa-envelope:hover {
   transform: translateY(-3px);
+  color: rgb(51, 164, 250);
 }
 /*forms for input and for output messages*/
-#messagesForm, #messages {
+#messagesForm,
+#messages {
   text-align: center;
   background-color: rgb(234, 215, 243);
 }
 
+/* .dark-theme #messagesForm {
+  background-color: #0e3568;;
+} */
+
+.dark-theme #messages {
+  background-color: #0e3568;
+  box-shadow: 0 0 0.8em 0.3em #c3c8e0;
+}
+
 .but_submit {
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .but_submit:hover {
@@ -255,20 +422,30 @@ p {
   background-color: #8b8bdd;
 }
 
-#removeB, #editB {
-  background-color: rgb(250, 199, 237);
+.dark-theme .but_submit {
+  background-color: rgb(51, 164, 250);
+  border-color: rgb(156, 210, 252);
+}
+
+.dark-theme .but_submit:hover {
+  background-color: #e4e4fd;
+}
+
+#removeB,
+#editB {
+  background-color: rgb(252, 237, 248);
   border-radius: 0.4em;
-  border: 2px solid rgb(206, 126, 186);
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  border: 2px solid rgb(206, 84, 175);
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 #removeB:hover {
-    background-color: rgb(253, 144, 226);
-    transform: translateY(-1px);
-  }
+  background-color: rgb(253, 128, 222);
+  transform: translateY(-1px);
+}
 #editB:hover {
-    background-color: rgb(253, 144, 226);
-    transform: translateY(-1px);
+  background-color: rgb(252, 124, 220);
+  transform: translateY(-1px);
 }
 /*new message section , link without underscores*/
 #newMessage {
@@ -278,6 +455,11 @@ p {
 #newMessage span {
   color: rgb(29, 29, 48);
 }
+
+.dark-theme #newMessage span {
+  color: rgb(207, 207, 241);
+}
+
 /*list of messages, name link, click on which opens the mail*/
 #newMessage a {
   font-weight: bold;
@@ -288,6 +470,11 @@ p {
   margin-left: 1em;
 }
 
+/*user name, email, message */
+.dark-theme .label {
+  color: rgb(207, 207, 241);
+}
+
 footer {
   background-color: rgba(184, 222, 247, 0.776);
   justify-items: center;
@@ -295,6 +482,6 @@ footer {
   margin-top: 1em;
   padding: 1em;
 }
-
-
-
+.dark-theme footer {
+  background-color: rgb(30, 138, 232);
+}
