@@ -11,7 +11,11 @@ const Skills = [
   "Java Script",
   "CSS",
   "HTML",
+  "API fetch",
   "Git Hub",
+  "Vercel",
+  "React",
+  "Node.js",
   "Adobe Photoshop",
   "UI/UX",
   "ABAP-4",
@@ -95,14 +99,20 @@ fetch("https://api.github.com/users/volha83/repos")
     for (let i = 0; i < repositories.length; i++) {
       console.log(repositories);
       console.log(repositories[i].name);
-      
+
       const title =
-        document.createElement("p"); /* description (ReadMe file info) from my repository GitHub*/
+        document.createElement(
+          "p"
+        ); /* description (ReadMe file info) from my repository GitHub*/
       const date =
-        document.createElement("p"); /* date of created from my repository GitHub*/
+        document.createElement(
+          "p"
+        ); /* date of created from my repository GitHub*/
       console.log(date);
       const project =
-        document.createElement("ol"); /* name of project from my repository GitHub*/    
+        document.createElement(
+          "ol"
+        ); /* name of project from my repository GitHub*/
 
       console.log("creatDate:", repositories[i].created_at);
       /* convert date to format mm/dd/yyyy */
@@ -113,7 +123,6 @@ fetch("https://api.github.com/users/volha83/repos")
       const ourDate = `${month}/${day}/${year}`;
       console.log(ourDate);
 
-
       title.innerHTML = `<p> ${repositories[i].description} </p>`;
       // date.innerHTML = <p style = "color:rgb(50, 36, 209)"> created at: ${repositories[i].created_at} </p>
       date.innerHTML = `<p style = "font-weight:bold" > created at: ${ourDate} </p>`;
@@ -123,7 +132,7 @@ fetch("https://api.github.com/users/volha83/repos")
       projectList.appendChild(title);
       projectList.appendChild(date);
       projectList.appendChild(project);
-      
+
       // project.setAttribute("id","myProjects"); /* for styles media.css - name Projects from  GitHub */
       // title.setAttribute("id", "descrProject");
       // date.setAttribute("id", "dateProject");
